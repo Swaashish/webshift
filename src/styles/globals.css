@@ -1,0 +1,93 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-graphite: #111820;
+  --color-graphite-raised: #1a222c;
+  --color-ink-line: #2a333d;
+  --color-paper: #f5f4ef;
+  --color-paper-deep: #e8e6de;
+  --color-mist: #8b9299;
+  --color-foam: #f7f8f6;
+
+  /* Brand accent, taken from the logo */
+  --color-brand-sky: #8fd3fb;
+  --color-brand-sky-deep: #6bbcf0;
+  --color-brand-violet: #9171f8;
+
+  /* Old names kept as aliases so existing classes (bg-lime, text-lime) still work */
+  --color-lime: var(--color-brand-sky);
+  --color-lime-deep: var(--color-brand-sky-deep);
+
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-graphite);
+  color: var(--color-foam);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-brand-sky);
+  color: var(--color-graphite);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-sky);
+  outline-offset: 3px;
+}
+
+.light-surface :focus-visible {
+  outline-color: var(--color-graphite);
+}
+
+/* Logo gradient utilities */
+.text-brand-gradient {
+  background-image: linear-gradient(90deg, #8fd3fb 0%, #8aa4fa 50%, #9171f8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-brand-gradient {
+  background-image: linear-gradient(90deg, #8fd3fb 0%, #8aa4fa 50%, #9171f8 100%);
+}
+
+@utility text-brand-gradient {
+  background-image: linear-gradient(120deg, #7dd3fc 0%, #818cf8 55%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-brand-gradient {
+  background-image: linear-gradient(120deg, #7dd3fc 0%, #818cf8 55%, #a78bfa 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
