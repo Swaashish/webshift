@@ -1,5 +1,5 @@
 import { PageMeta } from '../components/PageMeta'
-import { About } from '../sections/About'
+import About  from '../sections/About'
 import { Why } from '../sections/Why'
 
 export function AboutPage() {

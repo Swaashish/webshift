@@ -5,137 +5,143 @@ export type Service = {
   detail: string
 }
 
+
 export const services: Service[] = [
   {
     index: '01',
-    name: 'Business website development',
-    benefit: 'A clear home online that explains the business and invites enquiries.',
+    name: 'Website Development',
+    benefit: 'Modern, high-performing websites built to turn visitors into customers.',
     detail:
-      'A multi-page site structured around what you offer, who it is for, and how someone gets in touch.',
+      'Custom business websites, portfolios, and multi-page platforms with responsive layouts, smooth interactions, and clear user journeys.',
   },
   {
     index: '02',
-    name: 'Landing page development',
-    benefit: 'One focused page for a service, an offer, or a campaign.',
+    name: 'Landing Page Design',
+    benefit: 'Focused landing pages designed to generate leads and conversions.',
     detail:
-      'Useful when a single conversation matters more than a full website — a launch, a season, or one core service.',
+      'Conversion-focused pages for products, services, and campaigns with compelling layouts, clear calls to action, and responsive design.',
   },
   {
     index: '03',
-    name: 'Website redesign',
-    benefit: 'Replace an outdated site without throwing away what already works.',
+    name: 'Video Editing & Reels',
+    benefit: 'Professional video content that captures attention and keeps people watching.',
     detail:
-      'Structure, visual design, and the path to contact are rebuilt. Existing content is kept where it still earns its place.',
+      'Instagram Reels, YouTube videos, promotional edits, cinematic sequences, motion graphics, captions, and sound design.',
   },
   {
     index: '04',
-    name: 'Responsive web design',
-    benefit: 'A layout that is considered on a phone, a tablet, and a desk.',
+    name: 'SEO Optimization',
+    benefit: 'Improve your online visibility and help customers discover your business.',
     detail:
-      'Not a desktop page squeezed smaller. Type, spacing, and actions are designed for the screen people actually use.',
+      'On-page SEO, keyword research, technical improvements, metadata, content optimization, and local search optimization.',
   },
   {
     index: '05',
-    name: 'WhatsApp integration',
-    benefit: 'A direct line from the page into a conversation.',
+    name: 'Google Business Profile',
+    benefit: 'Make your business easier to discover on Google Search and Maps.',
     detail:
-      'Click-to-chat placed where a customer is ready to ask — next to a service, not buried after the footer.',
+      'Business profile setup, optimization, service listings, images, business information, and guidance for collecting genuine customer reviews.',
   },
   {
     index: '06',
-    name: 'Basic local SEO',
-    benefit: 'Sensible page structure so the business can be found for what it actually does.',
+    name: 'Website Testing & QA',
+    benefit: 'A smoother, more reliable experience across devices and browsers.',
     detail:
-      'Clear titles, descriptions, headings, and location language. This is foundational setup, not a ranking promise.',
+      'Responsive testing, broken-link checks, form validation, navigation testing, performance checks, and bug identification before launch.',
   },
   {
     index: '07',
-    name: 'Website maintenance',
-    benefit: 'Someone to call after launch when the business changes.',
+    name: 'Website Maintenance',
+    benefit: 'Keep your website updated, secure, and running smoothly.',
     detail:
-      'Copy updates, small layout adjustments, and a point of contact so the site does not go stale the month it ships.',
+      'Content updates, bug fixes, performance improvements, regular checks, and ongoing technical support as your business grows.',
   },
-]
+];
+
+
 
 export const principles = [
   {
-    title: 'Designed around the business',
-    text: 'The page follows how customers already look for you — a repair, a visit, a quote — not a generic template.',
+    title: 'Strategy Before Execution',
+    text: 'Every project starts with understanding your business, audience, and goals before choosing the right solution.',
   },
   {
-    title: 'Mobile-first experiences',
-    text: 'Most local enquiries start on a phone. The first screen has to work there before it is dressed for a desktop.',
+    title: 'Design That Stands Out',
+    text: 'From websites to video content, we create clean, modern visuals that make your brand memorable.',
   },
   {
-    title: 'Clear communication',
-    text: 'You work with one person. Scope, progress, and open questions stay in plain language.',
+    title: 'Built for Performance',
+    text: 'We focus on responsive websites, smooth experiences, optimized content, and reliable functionality.',
   },
   {
-    title: 'Thoughtful design',
-    text: 'Type, spacing, and imagery are chosen so the business looks established — not decorated for its own sake.',
+    title: 'Visibility That Matters',
+    text: 'SEO and local search optimization help the right audience discover your business online.',
   },
   {
-    title: 'Performance-conscious development',
-    text: 'Pages are built to load cleanly and stay responsive. No performance numbers are promised beyond careful engineering.',
+    title: 'Quality in Every Detail',
+    text: 'Every website, edit, and digital deliverable goes through careful checks before it reaches you.',
   },
   {
-    title: 'Direct collaboration',
-    text: 'No account layer between you and the work. Feedback goes to the person designing and building the site.',
+    title: 'Direct Collaboration',
+    text: 'Work directly with our team, share feedback openly, and stay involved throughout the entire process.',
   },
 ]
+
 
 export const process = [
   {
     index: '01',
-    title: 'Discover',
-    text: 'Understand the business, the customers, and what the website needs to do.',
+    title: 'Understand',
+    text: 'We learn about your business, goals, audience, and the digital solutions you need.',
   },
   {
     index: '02',
-    title: 'Design',
-    text: 'Create the visual direction and the path a visitor takes toward an enquiry.',
+    title: 'Plan & Create',
+    text: 'We shape the strategy, design the visuals, and plan the right approach for your project.',
   },
   {
     index: '03',
-    title: 'Develop',
-    text: 'Build the site, refine it against the design, and check it on real screen sizes.',
+    title: 'Build & Refine',
+    text: 'We develop, edit, optimize, and test everything to ensure quality across devices and platforms.',
   },
   {
     index: '04',
-    title: 'Launch',
-    text: 'Prepare the website for launch and hand over what you need to run it.',
+    title: 'Deliver & Grow',
+    text: 'We launch your project, share the final deliverables, and provide support as your business grows.',
   },
 ]
 
+
+
 export const faqs = [
   {
-    question: 'What kind of websites do you build?',
+    question: 'What services does WebShift offer?',
     answer:
-      'Business websites, landing pages, and redesigns for small and local companies — repair shops, home services, retailers, solar installers, and new businesses that need a credible presence. The work is custom designed and developed, not a theme with a logo swapped in.',
+      'We offer website development, landing page design, video editing, SEO optimization, Google Business Profile management, website testing, and ongoing maintenance.',
   },
   {
-    question: 'How does the project process work?',
+    question: 'How much does a website cost?',
     answer:
-      'It starts with a conversation about the business and what the site should do. From there: a design direction, development, review, and launch. You work directly with Webshift throughout. Timing depends on scope and is agreed per project — there is no fixed turnaround advertised here.',
+      'Pricing depends on the type of website, number of pages, features, and complexity. Contact us with your requirements for a custom quote.',
   },
   {
-    question: 'Is the website mobile responsive?',
+    question: 'Can you edit videos for Instagram and YouTube?',
     answer:
-      'Yes. Layouts are designed for phones first and then refined for larger screens. If most of your customers will visit from a phone, that is treated as the primary experience, not an afterthought.',
+      'Yes. We create Instagram Reels, YouTube videos, promotional edits, cinematic videos, motion graphics, captions, and more.',
   },
   {
-    question: 'Can you redesign an existing website?',
+    question: 'Will my website work on mobile devices?',
     answer:
-      'Yes. A redesign can replace the structure and visual design while keeping content, pages, or offers that are still doing their job. The first step is looking at the current site and deciding what should stay.',
+      'Absolutely. We build responsive websites designed to work smoothly across smartphones, tablets, and desktops.',
   },
   {
-    question: 'Do you provide maintenance?',
+    question: 'Do you provide SEO services?',
     answer:
-      'Yes. After launch, Webshift can stay on for copy updates, small changes, and general care. Maintenance is arranged separately from the build so it matches how often the business actually changes.',
+      'Yes. Our SEO services include keyword research, on-page optimization, technical improvements, and local SEO.',
   },
   {
-    question: 'How can I start a project?',
+    question: 'Do you provide support after delivery?',
     answer:
-      'Send a note through the contact form, WhatsApp, or email. Include the business name and what you are hoping the website will do. Webshift will reply to confirm fit and suggest a next conversation. The form on this site does not send by itself until a mail service is connected — email and WhatsApp are the live paths.',
+      'Yes. We offer website maintenance, bug fixes, content updates, and technical support after launch.',
   },
 ]
