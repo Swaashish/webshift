@@ -1,6 +1,6 @@
 import { PageMeta } from '../components/PageMeta'
 import { site } from '../config/site'
-import { About } from '../sections/About'
+import  About from '../sections/About'
 import { Contact } from '../sections/Contact'
 import { Faq } from '../sections/Faq'
 import { Hero } from '../sections/Hero'

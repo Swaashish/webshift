@@ -91,3 +91,24 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+@keyframes earth-spin {
+  from {
+    transform: perspective(800px) rotateY(0deg);
+  }
+
+  to {
+    transform: perspective(800px) rotateY(360deg);
+  }
+}
+
+.earth-spin {
+  transform-origin: 250px 250px;
+  animation: earth-spin 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .earth-spin {
+    animation: none;
+  }
+}
