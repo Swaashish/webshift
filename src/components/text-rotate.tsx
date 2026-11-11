@@ -1,8 +1,11 @@
+
 import {
   AnimatePresence,
   motion,
   type Transition,
+  type TargetAndTransition,
 } from "motion/react";
+
 import { useEffect, useState } from "react";
 
 interface TextRotateProps {
@@ -12,9 +15,9 @@ interface TextRotateProps {
   elementLevelClassName?: string;
   rotationInterval?: number;
   transition?: Transition;
-  initial?: Record<string, unknown>;
-  animate?: Record<string, unknown>;
-  exit?: Record<string, unknown>;
+  initial?: TargetAndTransition;
+  animate?: TargetAndTransition;
+  exit?: TargetAndTransition;
   splitBy?: "words" | "characters";
   staggerFrom?: "first" | "last" | "center";
   staggerDuration?: number;
@@ -51,8 +54,8 @@ export function TextRotate({
 
   const elements =
     splitBy === "words"
-      ? texts[index].split(" ")
-      : Array.from(texts[index]);
+      ? (texts[index] ?? "").split(" ")
+      : Array.from(texts[index] ?? "");
 
   return (
     <span className={`inline-flex overflow-hidden ${mainClassName}`}>
